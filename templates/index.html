@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Predict Future Sales</title>
+    <link rel="stylesheet" type= "text/css" href="{{url_for('static',filename = 'styles/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4" color="Green">Predict Future Sales - Kaggle Competition</h1>
+        <br></br>
+        <h2 id="lead">By Shivang Shrivastav</h2>
+      </div>
+    </div>
+
+    <div class="container1">
+
+      <div class="form_title">
+        <span class="enterdetails"><h1>Enter Details to Predict</h1></span>
+      </div>
+
+      <form action="/" method="post">
+        <div class="inputs">
+
+          <div class="blocks">
+            <span class="shop_id">Shop ID</span>
+            <input type="text" name="shop_id" value="" placeholder="Shop ID" required>
+          </div>
+
+          <div class="blocks">
+            <span class="item_id">Item ID:</span>
+            <input type="text" name="item_id" placeholder="Item ID" required>
+          </div>
+
+        </div>   <!--  inputs closing div -->
+
+          <div class="button">
+            <input type="submit" name="" value="Submit Details">
+          </div>
+
+      </form>
+
+      <bold>{{message}}</bold>
+
+
+    </div>   <!-- Container1 closing div -->
+    
+
+    
+
+    
+
+  </body>
+</html>
