@@ -1,9 +1,15 @@
 
 import pandas as pd
-import pickle
+import pickle5 as pickle
 
 df = pd.read_csv('df_data.csv')
-model = pickle.load(open('LGBM_Final_Model.pkl', 'rb'))
+
+path = 'LGBM_Final_Model.pkl'
+
+with open(path,'rb') as dt:
+	model = pickle.load(dt)
+
+# model = pickle.load(open('LGBM_Final_Model.pkl', 'rb'))
 
 X_test = df[df["date_block_num"]==34]
 X_test = X_test.drop("item_cnt_month", axis=1)
